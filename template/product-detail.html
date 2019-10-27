@@ -67,91 +67,89 @@
 
 <div class="content-wrapper">
 
-    <div class="container">
-        <div class="row pt120">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="heading align-center mb60">
-                    <h4 class="h1 heading-title">Milan Book store</h4>
-                    <p class="heading-text">Buy books, and we ship to you.
-                    </p>
-                </div>
+
+
+<!-- Books products grid -->
+
+
+<div class="container">
+    <div class="row pt120">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="heading align-center mb60">
+                <h4 class="h1 heading-title">Udemy E-commerce tutorial</h4>
+
+                <p class="heading-text">Buy books, and we ship to you.
+                   
+                </p>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- End Books products grid -->
-
-    <div class="container">
-        <div class="row pt120">
-            <div class="books-grid">
-
-                <div class="row mb30">
-                    @foreach($products as $product)
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="books-item">
-                            <div class="books-item-thumb">
-                                <img src="../public/app/img/book6.png" alt="book">
-                                <div class="new">New</div>
-                                <div class="sale">Sale</div>
-                                <div class="overlay overlay-books"></div>
+<div class="container">
+    <div class="row medium-padding120">
+        <div class="product-details">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="product-details-thumb">
+                    <div class="swiper-container" data-effect="fade">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="product-details-img-wrap swiper-slide">
+                                <img src="../public/app/img/product-details.png" alt="product" data-swiper-parallax="-10">
                             </div>
-
-                            <div class="books-item-info">
-                                <h5 class="books-title">{{$product->name}}</h5>
-
-                                <div class="books-price">{{$product->price}}</div>
-                            </div>
-
-                            <a href="19_cart.html" class="btn btn-small btn--dark add">
-                                <span class="text">Add to Cart</span>
-                                <i class="seoicon-commerce"></i>
-                            </a>
-
                         </div>
                     </div>
-                        @endforeach
                 </div>
+            </div>
 
-                <div class="row pb120">
 
-                    <div class="col-lg-12">
+            <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                <div class="product-details-info">
+                    <div class="product-details-info-price">$16.99</div>
+                    <h3 class="product-details-info-title">Marketing Strategy</h3>
+                    <p class="product-details-info-text">Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibham liber tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta.
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.
+                    </p>
 
-                        <nav class="navigation align-center">
-
-                            <a href="#" class="page-numbers bg-border-color current"><span>1</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>2</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>3</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>4</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>5</span></a>
-
-                            <svg class="btn-prev">
-                                <use xlink:href="#arrow-left"></use>
-                            </svg>
-                            <svg class="btn-next">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
-
-                        </nav>
-
+                    <div class="quantity">
+                        <a href="#" class="quantity-minus">-</a>
+                        <input title="Qty" class="email input-text qty text" type="text" value="2">
+                        <a href="#" class="quantity-plus">+</a>
                     </div>
 
+                    <a href="19_cart.html" class="btn btn-medium btn--primary">
+                        <span class="text">Add to Cart</span>
+                        <i class="seoicon-commerce"></i>
+                        <span class="semicircle"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- End Books products grid -->
+
+
+
+</div>
+
 <!-- Footer -->
 
 <footer class="footer">
+
     <div class="sub-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
                 </div>
             </div>
         </div>
     </div>
+
 </footer>
 
 
